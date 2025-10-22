@@ -1,7 +1,8 @@
-/* Estilo geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f3fa;
   margin: 0;
   padding: 0;
   color: #333;
@@ -9,64 +10,82 @@ body {
 
 /* Cabeçalho */
 header {
-  background: linear-gradient(135deg, #4b5fff, #6e00ff);
+  background: linear-gradient(135deg, #b37bff, #a259ff);
   color: white;
-  padding: 30px 10px;
   text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.2em;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.1rem;
   margin-top: 5px;
+  font-weight: 400;
 }
 
 /* Menu de navegação */
 nav {
-  background-color: #1e1e2f;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px 0;
+  background-color: #5c2e91;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #00bfff;
+  color: #d8b4fe;
 }
 
-/* Seções */
-section {
-  max-width: 800px;
-  margin: 50px auto;
-  background: white;
+.active {
+  background-color: #d8b4fe;
+  color: #4b0082;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Conteúdo principal */
+main {
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 850px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+main:hover {
+  transform: scale(1.01);
 }
 
 h2 {
-  color: #4b5fff;
-  border-left: 6px solid #6e00ff;
-  padding-left: 10px;
+  color: #8a2be2;
+  border-bottom: 2px solid #d8b4fe;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6em;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   padding: 15px;
-  background: #1e1e2f;
+  background-color: #5c2e91;
   color: white;
+  font-size: 0.9em;
   margin-top: 40px;
-  font-size: 0.9rem;
 }
