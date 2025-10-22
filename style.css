@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f3fa;
+  background-color: #f8f5fc;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #2d2d2d;
 }
 
 /* Cabeçalho */
@@ -13,45 +13,64 @@ header {
   background: linear-gradient(135deg, #b37bff, #a259ff);
   color: white;
   text-align: center;
-  padding: 25px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 30px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
+/* LOGO animado */
 header h1 {
   margin: 0;
-  font-size: 2.2em;
-  letter-spacing: 1px;
+  font-size: 2.5em;
+  background: linear-gradient(90deg, #fff, #d6b8ff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brilho 4s linear infinite;
+}
+
+@keyframes brilho {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
 
 header p {
-  margin-top: 5px;
+  margin-top: 8px;
   font-weight: 400;
+  font-size: 1.1em;
+  opacity: 0.9;
 }
 
 /* Menu de navegação */
 nav {
   background-color: #5c2e91;
-  padding: 10px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 600;
-  transition: 0.3s;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid transparent;
 }
 
 nav a:hover {
-  color: #d8b4fe;
+  background-color: #d8b4fe;
+  color: #4b0082;
+  transform: scale(1.05);
 }
 
 .active {
   background-color: #d8b4fe;
   color: #4b0082;
-  padding: 6px 12px;
-  border-radius: 8px;
+  border-color: #b37bff;
 }
 
 /* Conteúdo principal */
@@ -62,7 +81,7 @@ main {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
 main:hover {
@@ -72,7 +91,8 @@ main:hover {
 h2 {
   color: #8a2be2;
   border-bottom: 2px solid #d8b4fe;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -87,5 +107,7 @@ footer {
   background-color: #5c2e91;
   color: white;
   font-size: 0.9em;
-  margin-top: 40px;
+  margin-top: 50px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
