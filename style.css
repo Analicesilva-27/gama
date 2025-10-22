@@ -10,7 +10,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background: linear-gradient(135deg, #b37bff, #a259ff);
+  background: linear-gradient(135deg, #cfc6db, #a259ff);
   color: white;
   text-align: center;
   padding: 30px 0;
@@ -42,7 +42,7 @@ header p {
 
 /* Menu de navegação */
 nav {
-  background-color: #5c2e91;
+  background-color: #cab8df;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -63,13 +63,13 @@ nav a {
 
 nav a:hover {
   background-color: #d8b4fe;
-  color: #4b0082;
+  color: #b561f1;
   transform: scale(1.05);
 }
 
 .active {
   background-color: #d8b4fe;
-  color: #4b0082;
+  color: #d8cce0;
   border-color: #b37bff;
 }
 
@@ -89,7 +89,7 @@ main:hover {
 }
 
 h2 {
-  color: #8a2be2;
+  color: #b99cd4;
   border-bottom: 2px solid #d8b4fe;
   padding-bottom: 6px;
   margin-bottom: 15px;
@@ -104,7 +104,7 @@ p {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #5c2e91;
+  background-color: #bc9fdd;
   color: white;
   font-size: 0.9em;
   margin-top: 50px;
